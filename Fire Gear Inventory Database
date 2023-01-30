@@ -1,0 +1,28 @@
+--Create a fire gear inventory databse
+
+CREATE TABLE Gear (id INTEGER PRIMARY KEY, name TEXT, amount INTEGER,price INTEGER);
+
+INSERT INTO Gear VALUES (1,"Bunker coat",1,65.99);
+INSERT INTO Gear VALUES (2,"Bunker pants",1,75.99);
+INSERT INTO Gear VALUES (3,"Bunker boots",1,95.99);
+INSERT INTO Gear VAlUES (4,"Helmet",1,50);
+INSERT INTO Gear VALUES (5,"Stucture gloves",1,25);
+INSERT INTO Gear VALUES (6,"Extraction gloves",1,35);
+INSERT INTO Gear VALUES (7,"NOMEX", 1,20);
+INSERT INTO Gear VALUES (8,"SCBA Mask",1,45);
+INSERT INTO Gear VALUES (9,"Pager",1,45);
+INSERT INTO Gear VALUES (10,"Radio",1,85);
+INSERT INTO Gear VALUES (11,"Flashlight",1,30);
+INSERT INTO Gear VALUES (12,"Key",3,8.99);
+INSERT INTO Gear VALUES (13,"Uniform Shirt", 3,45);
+INSERT INTO Gear VALUES (14,"ESN",1,0);
+INSERT INTO Gear VALUES (15,"IAR",1,0);
+
+--Display database in order by price
+SELECT*FROM Gear ORDER BY price DESC;
+
+--How many articles of gear does each firefighter receive?
+SELECT SUM (amount) FROM Gear;
+
+--What is the amount we spend on each firefighter's gear?
+SELECT SUM (price) FROM Gear;
