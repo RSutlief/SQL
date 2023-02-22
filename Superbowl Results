@@ -1,3 +1,5 @@
+#In this SQL code, I'm querying a database that's holding Superbowl data to answer questions about the data using aggregate functions#
+
 CREATE TABLE superbowls(
   Date      TEXT PRIMARY KEY,
   SB         TEXT,
