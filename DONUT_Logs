@@ -1,3 +1,5 @@
+#In this SQL code, I'm querying a database that's holding dounut store data to answer questions about the data using aggregate functions and CASE#
+
 CREATE TABLE winstons_donut_logs (
     id TEXT PRIMARY KEY,
     status TEXT,
